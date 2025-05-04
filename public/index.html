@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immortal Legacy - Browser Idle RPG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="login-screen" id="loginScreen">
+            <div class="login-box">
+                <h1 class="logo">IMMORTAL LEGACY</h1>
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <input type="email" id="loginEmail" placeholder="Email">
+                    <input type="password" id="loginPassword" placeholder="Password">
+                    <button onclick="login()">Login</button>
+                    <p>New player? <a href="#" onclick="showRegister()">Create an account</a></p>
+                </div>
+                <div class="register-form" style="display: none;">
+                    <h2>Create Account</h2>
+                    <input type="text" id="registerUsername" placeholder="Username">
+                    <input type="email" id="registerEmail" placeholder="Email">
+                    <input type="password" id="registerPassword" placeholder="Password">
+                    <button onclick="register()">Create Account</button>
+                    <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-screen" id="gameScreen" style="display: none;">
+            <!-- Game interface from previous artifact -->
+            <!-- Include all game UI elements here -->
+        </div>
+    </div>
+
+    <script src="/js/game.js"></script>
+</body>
+</html>
