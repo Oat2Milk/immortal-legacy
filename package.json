@@ -1,0 +1,23 @@
+{
+  "name": "immortal-legacy",
+  "version": "1.0.0",
+  "description": "Browser-based Idle RPG Game",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "stripe": "^11.16.0",
+    "ws": "^8.13.0"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
