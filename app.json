@@ -1,0 +1,40 @@
+{
+  "name": "Immortal Legacy",
+  "description": "Browser-based Idle RPG Game",
+  "repository": "https://github.com/yourusername/immortal-legacy",
+  "keywords": ["game", "rpg", "idle", "mmorpg"],
+  "addons": [],
+  "env": {
+    "MONGODB_URI": {
+      "description": "MongoDB database URI",
+      "value": ""
+    },
+    "JWT_SECRET": {
+      "description": "Secret key for JWT tokens",
+      "generator": "secret"
+    },
+    "STRIPE_SECRET_KEY": {
+      "description": "Stripe secret key for payments",
+      "value": ""
+    },
+    "STRIPE_PUBLISHABLE_KEY": {
+      "description": "Stripe publishable key",
+      "value": ""
+    },
+    "APP_URL": {
+      "description": "Your app URL",
+      "value": "https://your-app.herokuapp.com"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
